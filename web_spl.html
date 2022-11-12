@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .markdown-body {
+  max-width: 1300px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 45px;
+  overflow-x:scroll;
+  }
+
+  .aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+
+  .audio-table audio {
+ width:300px;
+  }
+
+  .audio-table {
+  padding-top: 50px;
+  }
+
+  p {
+  text-align:letf;
+  }
+
+  .aligner p {
+  width:85%;
+  }
+
+  .markdown-body .contained {
+    max-width:1200px;
+
+  }
+  </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<font face = "Times New Roman"/>
+<title>GhostVec_demo</title>
+</head>
+<body>
+  <section class="markdown-body">
+  <div class="aligner">
+    <div class="contained">
+      <h1>GhostVec: Extracting Speaker Voice from End-to-End ASR Model using Adversarial Examples</h1> 
+      <p>The following selected speech samples relate to a paper (GhostVec: Extracting Speaker Voice from End-to-End ASR Model using Adversarial Examples). 
+ We compare ourselves to genuine speech.
+      </p>
+      <p style="text-align: center;">
+      		<img src="all.png" alt="Model" width="600px" height="300px">     
+      </p>
+      <table class="audio-table">
+        <tr>
+	<th> Speaker id</th>
+          <th>Genuine speech</th>
+          <th>SVD-modified GhostVec speech</th>
+	<th> Text </th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><audio controls>
+            <source src="wav/32_ori.wav" type="audio/wav" /></audio>
+          </td>
+          <td><audio controls>
+            <source src="wav/32_gv.wav" type="audio/wav" /></audio>
+          </td>
+         <td>
+	AND DEMONSTRATE A NEW KIND OF APPARITION THE GHOST STORY OF TO DAY GIVES YOU SPINAL SENSATIONS WITH A DIFFERENCE.
+	</td>
+	</tr>
+	<tr>
+          <td>2</td>
+          <td><audio controls>
+            <source src="wav/60_ori.wav" type="audio/wav" /></audio>
+          </td>
+          <td><audio controls>
+            <source src="wav/60_gv.wav" type="audio/wav" /></audio>
+          </td>
+         <td>
+	AND THE NEIGHBORS WOULD SAY TO EACH OTHER IN A LOW VOICE.
+	</td>
+	</tr>
+	<tr>
+  <td>3</td>
+          <td><audio controls>
+            <source src="wav/103_ori.wav" type="audio/wav" /></audio>
+          </td>
+          <td><audio controls>
+            <source src="wav/103_gv.wav" type="audio/wav" /></audio>
+          </td>
+         <td>
+	HE MURMURED TO HIMSELF OBVIOUSLY.
+	</td>
+	</tr>
+<tr>
+  <td>4</td>
+          <td><audio controls>
+            <source src="wav/911_ori.wav" type="audio/wav" /></audio>
+          </td>
+          <td><audio controls>
+            <source src="wav/911_gv.wav" type="audio/wav" /></audio>
+          </td>
+         <td>
+	THAT SHE SHOULD HAVE GONE THE LONGEST WAY ROUND TO FLORENCE IN ORDER TO SPEND A FEW WEEKS WITH HER INVALID SON.
+	</td>
+</tr>
+<tr>
+  <td>5</td>
+          <td><audio controls>
+            <source src="wav/2843_ori.wav" type="audio/wav" /></audio>
+          </td>
+          <td><audio controls>
+            <source src="wav/2843_gv.wav" type="audio/wav" /></audio>
+          </td>
+         <td>
+	THE BARONESS RETURNED TO THE HOTEL WITH AS MUCH CAUTION AS EUGENIE USED IN LEAVING IT SHE RAN LIGHTLY UP STAIRS AND WITH AN ACHING HEART ENTERED HER APARTMENT CONTIGUOUS AS WE KNOW TO THAT OF EUGENIE SHE WAS FEARFUL OF EXCITING ANY REMARK.
+	</td>
+</tr>
+<tr>
+<td>6</td>
+          <td><audio controls>
+            <source src="wav/5688_ori.wav" type="audio/wav" /></audio>
+          </td>
+          <td><audio controls>
+            <source src="wav/5688_gv.wav" type="audio/wav" /></audio>
+          </td>
+         <td>
+	I HAD MADE UP MY MIND THAT IF YOU DIDN'T COME FOR ME TO NIGHT.
+	</td>
+</tr>
+      </table>        
+    </section>
+  </div>
+  </section>
+</body>
+</html>
+
